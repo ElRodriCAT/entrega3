@@ -5,47 +5,71 @@
     <title>Foro | Recetas Express</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Foro</h1>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../views/nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Foro</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../views/contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../views/unete.html">Únete</a>
-                            </li>
-                        </ul>
-                    </div>
+    <header class="header d-flex justify-content-between align-items-center px-4">
+        <h1 class="m-0">Bienvenido a Recetas Express</h1>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid p-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Foro</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./unete.html">Únete</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
-    <main>
-        <section class="forum">
-            <h2>Participa en nuestro foro</h2>
-            <p>Comparte tus recetas y experiencias con otros usuarios.</p>
+    <main class="container mt-4">
+        <section class="foro">
+            <h2 class="text-center">Bienvenido al Foro</h2>
+            <p class="text-center">Comparte y descubre nuevas recetas con la comunidad.</p>
+
+            <!-- Sección de Temas -->
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h5>Recetas rápidas para la cena</h5>
+                    <p class="mb-1">Publicado por: María Gómez - 5 respuestas</p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h5>¿Cuál es tu postre favorito?</h5>
+                    <p class="mb-1">Publicado por: Pedro López - 12 respuestas</p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h5>Mejores recetas con pollo</h5>
+                    <p class="mb-1">Publicado por: Ana Torres - 8 respuestas</p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h5>Ideas para desayunos saludables</h5>
+                    <p class="mb-1">Publicado por: Luis Ramírez - 4 respuestas</p>
+                </a>
+            </div>
+
+            <div class="mt-4">
+                <h3>Crear un nuevo tema</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="titulo" class="form-label">Título del tema</label>
+                        <input type="text" class="form-control" id="titulo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Publicar</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 - InfoTech</p>
+        <p>&copy; 2025 - RecetasExpress</p>
         <div>
             <a href="https://www.facebook.com" target="_blank" class="text-white mx-2">
                 <i class="bi bi-facebook"></i> Facebook

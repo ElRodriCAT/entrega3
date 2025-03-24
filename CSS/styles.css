@@ -5,27 +5,231 @@
   border-radius: 10px;
 }
 
+.index {
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+.index h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3589d8;
+}
+.index p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.nosotros {
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+.nosotros h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3589d8;
+}
+.nosotros p {
+  font-size: 1rem;
+  color: #555;
+}
+.nosotros section {
+  color: rgb(6, 8, 3);
+  text-align: center;
+}
+
+.foro {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+.foro h2 {
+  color: #3589d8;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.foro .list-group-item {
+  background: rgb(137.5806451613, 164, 190.4193548387);
+  border: 1px solid rgb(25.9032258065, 36.5, 47.0967741935);
+  transition: background 0.3s ease;
+}
+.foro .list-group-item:hover {
+  background: rgb(34.9516129032, 49.25, 63.5483870968);
+}
+.foro form {
+  background: rgba(240, 240, 240, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+}
+.foro form .btn {
+  background: #3589d8;
+  border: none;
+}
+.foro form .btn:hover {
+  background: rgb(35.2780082988, 111.2614107884, 182.7219917012);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/backgroundContacto.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contacto-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contacto-container h2 {
+  color: #3589d8;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contacto-container p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+.contacto-container .contacto-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+.contacto-container .contacto-form label {
+  font-weight: bold;
+  text-align: left;
+}
+.contacto-container .contacto-form input, .contacto-container .contacto-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(25.9032258065, 36.5, 47.0967741935);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.contacto-container .contacto-form .btn {
+  background: #3589d8;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contacto-container .contacto-form .btn:hover {
+  background: rgb(35.2780082988, 111.2614107884, 182.7219917012);
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.whatsapp-btn img {
+  width: 35px;
+  height: 35px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/backgroundContacto.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.unete {
+  text-align: center;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+.unete h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3589d8;
+}
+.unete p {
+  font-size: 1rem;
+  color: #444;
+}
+.unete .btn {
+  display: inline-block;
+  background: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.unete .btn:hover {
+  background: rgb(25.9032258065, 36.5, 47.0967741935);
+}
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-body {
+main {
+  display: flex;
+  flex-direction: column;
   background-image: url("../img/backgroundIndex.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-main {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-main section {
-  color: rgb(121, 180, 24);
-  text-align: center;
+  padding-top: 100px;
 }
 
 .header {

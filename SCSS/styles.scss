@@ -2,6 +2,11 @@
 @use 'partials/mixins' as *;
 @use 'partials/extend' as *;
 
+@use 'partials/index';
+@use 'partials/nosotros';
+@use 'partials/foro';
+@use 'partials/contacto';
+@use 'partials/unete';
 
 .intro, .about, .forum, .contact, .join {
     @extend %section-style;
@@ -12,23 +17,20 @@ html, body {
     margin: 0;
     padding: 0;
 }
-body {
+// body {
+//     background-image: url('../img/backgroundIndex.jpg');
+//     background-repeat: no-repeat;img
+//     background-size: cover;
+//     background-position: center;
+// }
+main {
+    display: flex;
+    flex-direction: column;
     background-image: url('../img/backgroundIndex.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
-    
-}
-main {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    
-    section{
-        color:rgb(121, 180, 24);
-        text-align: center;
-    }
+    padding-top: 100px;
 }
 
 .header {
@@ -51,7 +53,7 @@ main {
         list-style: none;
         padding: 0;
         margin: 0;
-
+        
         li {
             display: inline-block;
             margin: 0 15px;

@@ -5,33 +5,30 @@
     <title>Nosotros | Recetas Express</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Nosotros</h1>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
+    <header class="header d-flex justify-content-between align-items-center px-4">
+        <h1 class="m-0">Nosotros</h1>
+        <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid p-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav"><nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid p-0">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../views/foro.html">Foro</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../views/contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../views/unete.html">Únete</a>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./foro.html">Foro</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./unete.html">Únete</a></li>
                         </ul>
                     </div>
                 </div>
@@ -39,13 +36,68 @@
         </div>
     </header>
     <main>
-        <section class="about">
-            <h2>Sobre nosotros</h2>
-            <p>Somos un equipo apasionado por la cocina rápida y deliciosa.</p>
+        <section class="intro">
+            <h2 class="text-success">Nuestra Historia</h2>
+            <p>
+                En <strong>Recetas Express</strong>, creemos que cocinar no tiene que ser complicado ni llevar horas. 
+                Fundamos esta plataforma con la misión de ayudarte a preparar platillos deliciosos en minutos, 
+                sin sacrificar el sabor ni la calidad.
+            </p>
+        </section>
+        <section class="intro bg-light mision-vision row">
+            <div class="col-md-6">
+                <h3 class="text-primary">Nuestra Misión</h3>
+                <p>
+                    Brindar recetas rápidas, fáciles y accesibles para todas las personas, 
+                    desde principiantes hasta expertos en la cocina.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-primary">Nuestra Visión</h3>
+                <p>
+                    Ser la plataforma de referencia para quienes buscan inspiración y eficiencia en la cocina, 
+                    ofreciendo recetas innovadoras y prácticas.
+                </p>
+            </div>
+        </section>
+
+        <section class="equipo text-center">
+            <h2 class="text-success intro">Nuestro Equipo</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../img/top-chef-21-laura.jpg" class="" alt="Chef 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Laura Martínez</h5>
+                            <p class="card-text">Chef profesional y especialista en recetas expréss.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../img/Carlos-Velazquez.jpg" class="" alt="Chef 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Carlos Velazquez</h5>
+                            <p class="card-text">Amante de la cocina saludable y rápida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center mt-5">
+            <h2 class="text-success intro">Nuestros Valores</h2>
+            <ul class="list-group  d-inline-block text-start">
+                <li class="list-group-item">✅ Rapidez y eficiencia</li>
+                <li class="list-group-item">✅ Sabor sin complicaciones</li>
+                <li class="list-group-item">✅ Recetas para todos</li>
+                <li class="list-group-item">✅ Comunidad y aprendizaje</li>
+            </ul>
         </section>
     </main>
+    
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 - InfoTech</p>
+        <p>&copy; 2025 - RecetasExpress</p>
         <div>
             <a href="https://www.facebook.com" target="_blank" class="text-white mx-2">
                 <i class="bi bi-facebook"></i> Facebook
