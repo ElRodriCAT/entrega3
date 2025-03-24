@@ -30,23 +30,26 @@ main section {
 
 .header {
   background: #3589d8;
-  padding: 20px;
-  text-align: center;
-  color: rgb(27, 10, 10);
+  height: 80px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 .header h1 {
-  align-items: center;
+  margin: 0;
+  font-size: 24px;
+  line-height: 80px;
   text-align: center;
+  white-space: nowrap;
 }
 .header nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 .header nav ul li {
-  display: inline;
+  display: inline-block;
   margin: 0 15px;
 }
 .header nav ul li a {
@@ -55,7 +58,7 @@ main section {
   font-weight: bold;
 }
 .header nav ul li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: rgb(42, 168, 141);
 }
 
