@@ -28,9 +28,30 @@
         </nav>
     </header>
     <main>
-        <section class="intro">
-            <h2>Regístrate y comparte tus recetas</h2>
-            <p>Forma parte de nuestra comunidad culinaria.</p>
+        <section class="container-fluid text-center" style="max-width: 500px;">
+            <h2 class="text-success">¿Por qué unirte?</h2>
+            <p>
+                Únete a nuestra comunidad y accede a recetas exclusivas, trucos de cocina y mucho más. 
+                Forma parte de Recetas Express y disfruta de la mejor experiencia culinaria.
+            </p>
+        </section>
+        <section class="container-fluid" style="max-width: 500px;">
+            <h3 class="text-primary text-center">Regístrate</h3>
+            <form class="p-4">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" id="email" class="form-control" placeholder="correo@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input type="password" id="password" class="form-control" placeholder="Contraseña segura">
+                </div>
+                <button type="submit" class="btn btn-success w-100">Unirse</button>
+            </form>
         </section>
     </main>
     
