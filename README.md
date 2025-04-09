@@ -17,7 +17,7 @@ Este proyecto es un foro informativo y colaborativo desarrollado como parte de u
 - SCSS (con mixins, partials, nesting)
 - Bootstrap 5
 - Node.js y npm (para compilar SCSS)
-- JavaScript (solo si añadiste comportamiento dinámico, opcional)
+- JavaScript
 
 ## ⚙ Instalación y Uso
 
