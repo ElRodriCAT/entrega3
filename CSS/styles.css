@@ -82,8 +82,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("../img/backgroundContacto.jpg");
   background-size: cover;
+  background-image: url("../img/backgroundIndex.jpg");
   background-position: center;
 }
 
