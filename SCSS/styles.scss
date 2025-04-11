@@ -90,7 +90,7 @@ main {
 
 .card {
     height: 100%; 
-    min-height: 400px;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
@@ -112,17 +112,13 @@ main {
         flex-grow: 1;
     }
 
-    .card-title {
-        min-height: 40px; 
-    }
-
-    .card-text {
-        min-height: 50px;
+    .card-title, .card-text {
+        min-height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-    }
+      }
 
     .btn {
         width: 80%;
@@ -148,3 +144,10 @@ main {
         color: #555; 
     }
 }
+@media (max-width: 768px) {
+    .card {
+      min-height: auto;
+      margin-bottom: 20px;
+    }
+  }
+  
