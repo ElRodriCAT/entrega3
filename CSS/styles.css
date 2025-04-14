@@ -82,8 +82,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url("../img/backgroundContacto.jpg");
   background-size: cover;
-  background-image: url("../img/backgroundIndex.jpg");
   background-position: center;
 }
 
@@ -346,36 +346,39 @@ main {
     position: fixed;
     top: 80px;
     left: 0;
-    width: 100%;
-    height: calc(100vh - 80px);
+    right: 0;
+    width: 100vw;
     background-color: #3589d8;
     z-index: 9999;
-    padding-top: 20px;
+    padding: 20px 0;
   }
-  .navbar-collapse ul.navbar-nav {
+  ul.navbar-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
   }
-  .navbar-collapse ul.navbar-nav li.nav-item {
+  ul.navbar-nav li.nav-item {
     width: 100%;
     text-align: center;
   }
-  .navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
+  ul.navbar-nav li.nav-item a.nav-link {
     display: block;
     color: white !important;
     font-size: 1.2rem;
     padding: 10px 0;
     width: 100%;
   }
-  .navbar-collapse ul.navbar-nav li.nav-item a.nav-link:hover {
+  ul.navbar-nav li.nav-item a.nav-link:hover {
     background-color: rgb(95.7468879668, 161.9709543568, 224.2531120332);
     color: #2c3e50 !important;
   }
-  .navbar-toggler {
-    z-index: 10000;
-  }
+}
+.navbar-toggler {
+  z-index: 10000;
 }
 
 /*# sourceMappingURL=styles.css.map */
