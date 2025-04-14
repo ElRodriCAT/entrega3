@@ -28,7 +28,6 @@
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
 }
 .nosotros h2 {
@@ -234,7 +233,7 @@ main {
 }
 
 .header {
-  background: rgba(204, 49, 49, 0.862745098);
+  background: linear-gradient(to left, #01061a, #575757);
   height: 80px;
   display: flex;
   align-items: center;
@@ -244,6 +243,7 @@ main {
   z-index: 10001;
 }
 .header h1 {
+  color: white;
   margin: 0;
   font-size: 24px;
   line-height: 80px;
@@ -268,6 +268,18 @@ main {
   text-decoration: none;
   color: rgb(14, 202, 70);
 }
+.header nav ul li a.active {
+  color: #2c3e50 !important;
+  background-color: transparent;
+}
+.header nav ul li a:focus, .header nav ul li a:active {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.footerClr {
+  background: linear-gradient(to left, #01061a, #575757);
+}
 
 .recetas-container {
   display: flex;
@@ -275,7 +287,7 @@ main {
   gap: 20px;
   justify-content: center;
   padding: 20px;
-  background: linear-gradient(135deg, rgba(178, 58, 72, 0.8), rgba(196, 155, 204, 0.8)) !important;
+  background: linear-gradient(#ff4b1f, #ff9068);
 }
 
 .card {
@@ -284,7 +296,7 @@ main {
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: linear-gradient(135deg, rgba(178, 58, 72, 0.8), rgba(196, 155, 204, 0.8));
+  background: linear-gradient(#ff4b1f, #ff9068);
 }
 .card:hover {
   cursor: pointer;
@@ -349,7 +361,7 @@ main {
     left: 0;
     right: 0;
     width: 100vw;
-    background: rgba(204, 49, 49, 0.862745098);
+    background: linear-gradient(to left, #01061a, #575757);
     z-index: 9999;
     padding: 20px 0;
   }
@@ -361,7 +373,7 @@ main {
     margin: 0;
     padding: 0;
     width: 100vw;
-    background: rgba(204, 49, 49, 0.862745098);
+    background: linear-gradient(to left, #01061a, #575757);
   }
   ul.navbar-nav li.nav-item {
     width: 100%;
